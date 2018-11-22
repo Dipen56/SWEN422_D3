@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <% include ../partials/header.ejs %>
+</head>
+
+<body>
+    <% include ../partials/nav.ejs %>
+
+    <!--q3-->
+    <div id="q3container" style="width: 100vw; height: 50vh" ng-controller="q3Ctrl" ng-init="init()"></div>
+
+    <!--q3b-->
+    <div  ng-controller="q3bCtrl" ng-init="init()">
+        <div id="q3bcontainer" style="width: 100vw; height: 50vh"></div>
+        <div style="padding-left: 80px;">
+            Select Year: <select class="year-select text-center" ng-model="current" ng-options="x.year for x in seasons" ng-change="changeDisplay()"></select>
+        </div>
+    </div>
+
+    <!-- Common Scripts -->
+    <% include ../partials/common.ejs %>
+    <!--q3b Controller and Helper JS files-->
+    <script src="/javascripts/transforms/q3b.transform.js"></script>
+    <script src="/javascripts/d3/q3b.d3.js"></script>
+    <script src="/javascripts/controllers/q3b.controller.js"></script>
+
+    <!--q3 Controller and Helper JS files-->
+    <script src="/javascripts/controllers/q3.controller.js"></script>
+    <script src="/javascripts/d3/q3.d3.js"></script>
+    <script src="/javascripts/transforms/q3.transform.js"></script>
+</body>
+</html>

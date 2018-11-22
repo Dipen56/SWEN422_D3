@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <% include ../partials/header.ejs %>
+</head>
+
+<body>
+    <% include ../partials/nav.ejs %>
+
+    <!--q2-->
+    <div class="row">
+        <div id="q2bcontainer" style="width: 100vw; height: 50vh" ng-controller="q2bCtrl" ng-init="init()"></div>
+    </div>
+
+    <!--q2b-->
+    <div class="row" >
+        <div id="q2container" style="width: 100vw; height: 50vh" ng-controller="q2Ctrl" ng-init="init()"></div>
+    </div>
+
+    <!-- Common Scripts -->
+    <% include ../partials/common.ejs %>
+
+    <!--q2 Controller and Helper JS files-->
+    <script src="/javascripts/transforms/q2.transform.js"></script>
+    <script src="/javascripts/d3/q2.d3.js"></script>
+    <script src="/javascripts/controllers/q2.controller.js"></script>
+
+    <!--q2b Controller and Helper JS files-->
+    <script src="/javascripts/transforms/q2b.transform.js"></script>
+    <script src="/javascripts/d3/q2b.d3.js"></script>
+    <script src="/javascripts/controllers/q2b.controller.js"></script>
+</body>
+
+</html>
+
+
+
+
+

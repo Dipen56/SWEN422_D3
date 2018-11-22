@@ -1,0 +1,7 @@
+{
+  "name": "Express App Template",
+  "description": "Barebones of a Heroku application",
+  "repository": "",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}

@@ -1,0 +1,118 @@
+/* CSS Stuff Goes Here */
+
+body {
+    color: white;
+    background-color: #282828;
+    padding: 10px;
+}
+
+.axis-x path {
+    /* display: none; */
+    stroke: white;
+}
+
+.axis path{
+    stroke: white;
+}
+
+.tick text{
+    fill: white;
+}
+
+.tick line {
+    stroke: white;
+}
+
+.legend text{
+    color: white;
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+
+body {
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 70px;
+    padding: 2px;
+    background-color: #282828;
+    font: 12px sans-serif;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+div.q1tooltip {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    padding: 2px;
+    background-color: #282828;
+    font: 12px sans-serif;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+div.q3btooltip{
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    padding: 2px;
+    background-color: #282828;
+    font: 12px sans-serif;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+div.q1btooltip {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+
+    height: 70px;
+    padding: 2px;
+    background-color: #282828;
+    font: 12px sans-serif;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+
+
+}
+
+select.year-select{
+    height: 50px;
+    width: 10%;
+    font-size: 2rem;
+    color: #282828;
+    background-color: white;
+}
+
+select.placing-select{
+    height: 50px;
+    width: 10%;
+    font-size: 2rem;
+    color: #282828;
+    background-color: white;
+}
+
+div.ng-scope, .row{
+    clear: both;
+}

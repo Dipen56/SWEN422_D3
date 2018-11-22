@@ -1,0 +1,33 @@
+{
+  "name": "swen422-assignment1",
+  "version": "1.0.0",
+  "description": "Visualisation Application",
+  "engines": {
+    "node": "8.9.4"
+  },
+  "main": "./bin/www",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "keywords": [
+    "Visualisation",
+    "Netball"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.ecs.vuw.ac.nz/swen325_team/swen422-assignment1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "csvtojson": "^2.0.8",
+    "debug": "^3.1.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "moment": "^2.22.2",
+    "morgan": "^1.9.0",
+    "serve-favicon": "^2.5.0"
+  }
+}

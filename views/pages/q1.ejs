@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <% include ../partials/header.ejs %>
+</head>
+<body>
+    <% include ../partials/nav.ejs %>
+    <!--q1-->
+    <div ng-controller="q1Ctrl" ng-init="init()">
+        <div id="q1container" style="width: 90vw; height: 70vh; clear: both"></div>
+        <div style="padding-left: 80px;">
+            Select Placing: <select class="placing-select text-center" ng-model="current" ng-options=" x for x in placing" ng-change="changeDisplay()"></select>
+        </div>
+    </div>
+    <!--q1b-->
+    <div ng-controller="q1bCtrl" ng-init="init()">
+        <div id="q1bcontainer" style="width: 100vw; height: 50vh"></div>
+        <div style="padding-left: 80px;">
+            Select Year: <select class="year-select text-center" ng-model="current" ng-options="x.year for x in seasons" ng-change="changeDisplay()"></select>
+        </div>
+    </div>
+    <!-- Common Scripts -->
+    <% include ../partials/common.ejs %>
+
+    <!--q1 Controller and Helper JS files-->
+    <script src="/javascripts/transforms/q1.transform.js"></script>
+    <script src="/javascripts/d3/q1.d3.js"></script>
+    <script src="/javascripts/controllers/q1.controller.js"></script>
+
+    <!--q1b Controller and Helper JS files-->
+    <script src="/javascripts/transforms/q1b.transform.js"></script>
+    <script src="/javascripts/d3/q1b.d3.js"></script>
+    <script src="/javascripts/controllers/q1b.controller.js"></script>
+</body>
+</html>
